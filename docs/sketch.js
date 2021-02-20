@@ -188,15 +188,24 @@ function mergeTimer(){
   }
 }
 
+let newBallList = [1, 1, 2 ];
+let newBallToAdd = 2;
+
 function newBallCode(){
   if(newBall != null){
     newBall.position.set( min(WIDTH-newBall.r, max(newBall.r, mouseX)), 20);
     newBall.draw();
   }
+
+  if(score % 500 == 0){
+    newBallList.push(newBallToAdd);
+    newBallToAdd++;
+  }
+
   ballTime --;
   if(ballTime <= 0 && newBall == null){
     ballTime = ballTimeReset;
-    newBall = new Ball(WIDTH/2, 20, random([1, 1, 2]));
+    newBall = new Ball(WIDTH/2, 20, random(newBallList));
   }
 }
 
