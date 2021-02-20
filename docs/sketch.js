@@ -90,13 +90,13 @@ let scoreP = null;
 
 function setup(){
   createCanvas(WIDTH, HEIGHT);
-  balls.push(new Ball(200, 100, 1));
-  balls.push(new Ball(200, 200, 2));
-  balls.push(new Ball(200, 300, 3));
-  balls.push(new Ball(200, 400, 4));
-  balls.push(new Ball(200, 500, 5));
-  balls.push(new Ball(200, 600, 6));
-  balls.push(new Ball(200, 700, 7));
+  // balls.push(new Ball(200, 100, 1));
+  // balls.push(new Ball(200, 200, 2));
+  // balls.push(new Ball(200, 300, 3));
+  // balls.push(new Ball(200, 400, 4));
+  // balls.push(new Ball(200, 500, 5));
+  // balls.push(new Ball(200, 600, 6));
+  // balls.push(new Ball(200, 700, 7));
 }
 
 function touching(a, b, ar, br){
