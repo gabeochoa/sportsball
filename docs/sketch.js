@@ -12,7 +12,7 @@ let highScore = 0;
 
 let explosion;
 function preload(){
-  explosion = loadSound('./assets/explosion.wav')
+  explosion = loadSound('explosion.wav')
 }
 
 function lToC(l){
