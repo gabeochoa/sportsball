@@ -160,8 +160,8 @@ function resolveCollision(a, b){
 }
 
 const elapsedTime = 1/60;
-const ballTimeReset = 150;
-let ballTime = ballTimeReset;
+const ballTimeReset = 100;
+let ballTime = 0;
 let newBall = null;
 
 const mergeCooldownMax = 15;
@@ -188,7 +188,7 @@ function mergeTimer(){
   }
 }
 
-let newBallList = [1, 1, 2 ];
+let newBallList = [1, 1, 2];
 let newBallToAdd = 2;
 
 function newBallCode(){
@@ -197,7 +197,7 @@ function newBallCode(){
     newBall.draw();
   }
 
-  if(score % 500 == 0){
+    if(score > 500 && (score / 500)+3 > newBallList.length){
     newBallList.push(newBallToAdd);
     newBallToAdd++;
   }
